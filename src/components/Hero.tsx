@@ -4,6 +4,20 @@ import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Download, Mail, Github, Linkedin } from "lucide-react";
 
 export const Hero = () => {
+  const handleDownloadResume = () => {
+    // Create a link element and trigger download
+    const link = document.createElement('a');
+    link.href = '/resume.pdf'; // Path to your resume file in public folder
+    link.download = 'Doli_Rani_Resume.pdf'; // Downloaded file name
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
+  const handleContactMe = () => {
+    window.location.href = 'mailto:drani8455@gmail.com';
+  };
+
   return (
     <section className="min-h-screen flex items-center justify-center px-4 py-20">
       <div className="max-w-4xl mx-auto text-center">
@@ -37,6 +51,7 @@ export const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16 animate-scale-in">
             <Button 
               size="lg" 
+              onClick={handleDownloadResume}
               className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105"
             >
               <Download className="w-5 h-5 mr-2" />
@@ -45,6 +60,7 @@ export const Hero = () => {
             <Button 
               variant="outline" 
               size="lg"
+              onClick={handleContactMe}
               className="border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105"
             >
               <Mail className="w-5 h-5 mr-2" />
