@@ -1,7 +1,6 @@
 
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Progress } from "@/components/ui/progress";
 
 export const Skills = () => {
   const skillCategories = [
@@ -72,7 +71,12 @@ export const Skills = () => {
                         <span className="font-medium text-gray-700">{skill.name}</span>
                         <span className="text-sm text-gray-500">{skill.level}%</span>
                       </div>
-                      <Progress value={skill.level} className="h-2" />
+                      <div className="w-full bg-gray-200 rounded-full h-2">
+                        <div 
+                          className="bg-gradient-to-r from-blue-600 to-purple-600 h-2 rounded-full transition-all duration-1000 ease-out"
+                          style={{ width: `${skill.level}%` }}
+                        ></div>
+                      </div>
                     </div>
                   ))}
                 </div>
