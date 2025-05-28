@@ -8,20 +8,21 @@ export const Skills = () => {
     {
       category: "Frontend Technologies",
       skills: [
-        { name: "Angular", level: 90 },
+        { name: "React JS", level: 90 },
+        { name: "Angular", level: 85 },
         { name: "TypeScript", level: 85 },
         { name: "HTML5", level: 95 },
-        { name: "SCSS", level: 85 },
-        { name: "D3.js", level: 75 }
+        { name: "CSS/SCSS", level: 85 },
+        { name: "D3.js", level: 75 },
+        { name: "JavaScript", level: 90 }
       ]
     },
     {
       category: "Backend Development",
       skills: [
         { name: "Core Java", level: 80 },
-        { name: "Java 8", level: 75 },
         { name: "RESTful APIs", level: 85 },
-        { name: "MySQL", level: 70 }
+        { name: "MySQL", level: 75 }
       ]
     },
     {
@@ -30,32 +31,36 @@ export const Skills = () => {
         { name: "Git", level: 85 },
         { name: "Eclipse", level: 75 },
         { name: "IntelliJ", level: 80 },
-        { name: "Visual Studio", level: 85 },
-        { name: "Postman", level: 80 }
+        { name: "Visual Studio", level: 85 }
       ]
     },
     {
-      category: "Cloud & Platforms",
+      category: "Design & Development",
       skills: [
-        { name: "Azure", level: 70 },
-        { name: "Bitbucket", level: 75 }
+        { name: "UI/UX Design", level: 80 },
+        { name: "Responsive Design", level: 90 },
+        { name: "Performance Optimization", level: 75 }
       ]
     }
   ];
 
-  const certifications = ["Core Java", "SC-900", "AZ-500"];
+  const hobbies = ["Cooking", "Singing", "Sports", "Health Activities"];
 
   return (
     <section className="py-20 px-4 bg-white" id="skills">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl font-bold text-gray-800 mb-4">Skills & Expertise</h2>
           <p className="text-lg text-gray-600">Technologies and tools I work with</p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           {skillCategories.map((category, index) => (
-            <Card key={index} className="hover:shadow-lg transition-all duration-300">
+            <Card 
+              key={index} 
+              className="hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 animate-scale-in"
+              style={{ animationDelay: `${index * 0.1}s` }}
+            >
               <CardHeader>
                 <CardTitle className="text-xl text-blue-600">{category.category}</CardTitle>
               </CardHeader>
@@ -76,18 +81,18 @@ export const Skills = () => {
           ))}
         </div>
 
-        <Card className="bg-gradient-to-r from-blue-50 to-purple-50">
+        <Card className="bg-gradient-to-r from-blue-50 to-purple-50 animate-fade-in">
           <CardHeader>
-            <CardTitle className="text-xl text-center text-gray-800">Certifications</CardTitle>
+            <CardTitle className="text-xl text-center text-gray-800">Hobbies & Interests</CardTitle>
           </CardHeader>
           <CardContent>
             <div className="flex flex-wrap justify-center gap-3">
-              {certifications.map((cert, index) => (
+              {hobbies.map((hobby, index) => (
                 <Badge 
                   key={index} 
-                  className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-4 py-2 text-sm"
+                  className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-4 py-2 text-sm transform hover:scale-105 transition-all duration-300"
                 >
-                  {cert}
+                  {hobby}
                 </Badge>
               ))}
             </div>
