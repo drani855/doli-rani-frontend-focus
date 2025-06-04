@@ -1,14 +1,12 @@
-
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Download, Mail, Github, Linkedin } from "lucide-react";
 
 export const Hero = () => {
   const handleDownloadResume = () => {
-    // Create a link element and trigger download
     const link = document.createElement('a');
-    link.href = '/resume.pdf'; // Path to your resume file in public folder
-    link.download = 'Doli_Rani_Resume.pdf'; // Downloaded file name
+    link.href = '/DoliRani_resume.pdf';
+    link.download = 'DoliRani_resume.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -26,7 +24,7 @@ export const Hero = () => {
           <div className="mb-8 flex justify-center">
             <Avatar className="w-32 h-32 border-4 border-gradient-to-r from-blue-600 to-purple-600 shadow-2xl animate-scale-in">
               <AvatarImage 
-                src="/lovable-uploads/4f192be1-cdf1-4d01-ae9b-1f725f74237b.png" 
+                src="/profile.png" 
                 alt="Doli Rani" 
                 className="object-cover"
               />
