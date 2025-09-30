@@ -5,8 +5,8 @@ import { Download, Mail, Github, Linkedin } from "lucide-react";
 export const Hero = () => {
   const handleDownloadResume = () => {
     const link = document.createElement('a');
-    link.href = '/DoliRani_resume.pdf';
-    link.download = 'DoliRani_resume.pdf';
+    link.href = '/Doli-Rani-Dev.pdf';
+    link.download = 'Doli-Rani-Dev.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -40,11 +40,16 @@ export const Hero = () => {
           <h2 className="text-2xl md:text-3xl text-gray-700 mb-8 font-medium animate-fade-in">
             Frontend Developer & Software Engineer
           </h2>
-          <p className="text-lg text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed animate-fade-in">
-            Software Engineer with 2.7+ years of experience in requirement-driven development, 
-            specializing in React, Angular, and modern frontend technologies. 
-            Focused on creating responsive, user-friendly web applications and delivering exceptional user experiences.
-          </p>
+         <p className="text-lg text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed animate-fade-in">
+          Passionate <span className="font-semibold text-blue-600">Frontend Developer</span> and 
+          <span className="font-semibold text-purple-600"> Software Engineer</span> with 4+ years of 
+          experience building scalable, responsive, and user-centric web applications using 
+          <span className="font-semibold"> Angular and modern JavaScript/TypeScript frameworks</span>. 
+          Skilled in crafting elegant UI/UX and integrating cutting-edge technologies including 
+          <span className="font-semibold"> AI, NLP, and Large Language Models (LLMs)</span> to deliver 
+          intelligent, next-generation solutions. Adept at collaborating across teams, optimizing performance, 
+          and transforming business requirements into impactful digital products.
+        </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16 animate-scale-in">
             <Button 
@@ -88,7 +93,7 @@ export const Hero = () => {
 
           <div className="flex justify-center space-x-8 animate-slide-in-right">
             <div className="text-center transform hover:scale-105 transition-all duration-300">
-              <div className="text-3xl font-bold text-blue-600">2.7+</div>
+              <div className="text-3xl font-bold text-blue-600">4+</div>
               <div className="text-gray-600">Years Experience</div>
             </div>
             <div className="text-center transform hover:scale-105 transition-all duration-300">

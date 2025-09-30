@@ -5,7 +5,23 @@ export const Experience = () => {
   const experiences = [
     {
       company: "ACCENTURE",
-      role: "Advanced App Engineering Associate",
+      role: "Advanced App Engineering Analyst",
+      location: "Bhubaneswar, Odisha",
+      period: "April 2025 - Current",
+      project: "AI-Prompt Driven Data Visualization",
+      teamSize: "15",
+      achievements: [
+        "Supported AI-driven prompt interpretation to convert natural language instructions into dynamic D3.js visualizations.",
+        "Contributed to integration of Generative AI (GenAI) and NLP techniques for automated chart configuration.",
+        "Assisted in enabling real-time, interactive dashboards (bar, line, stacked) reducing manual chart creation effort by 40%.",
+        "Collaborated on AI-powered frontend solutions, improving decision-making efficiency through intelligent visualization automation.",
+        "Leveraged OpenAPI and RESTful APIs for seamless integration between AI services and the Angular frontend."
+      ],
+      skills: ["Angular", "TypeScript", "GenAI","NLP", "OpenApi","RESTful APIs", "Git"]
+    },
+    {
+      company: "ACCENTURE",
+      role: "Advanced App Engineering Analyst",
       location: "Bangalore, Karnataka",
       period: "Oct 2023 - Current",
       project: "ACP-LOCAL HOTELING",
@@ -22,7 +38,7 @@ export const Experience = () => {
     },
     {
       company: "ACCENTURE",
-      role: "Advanced App Engineering Analyst",
+      role: "Advanced App Engineering Associate",
       location: "Bhubaneswar, Odisha",
       period: "Oct 2022 - Oct 2023",
       project: "MyWizard",

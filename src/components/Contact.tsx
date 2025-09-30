@@ -47,20 +47,6 @@ export const Contact = () => {
           </Card>
         </div>
 
-        <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg p-8 text-center text-white">
-          <h3 className="text-2xl font-bold mb-4">Ready to Start Your Project?</h3>
-          <p className="text-lg mb-6 opacity-90">
-            I'm always excited to work on new challenges and create amazing user experiences.
-          </p>
-          <Button 
-            size="lg" 
-            className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105"
-          >
-            <Mail className="w-5 h-5 mr-2" />
-            Start a Conversation
-          </Button>
-        </div>
-
         <div className="mt-12 text-center">
           <div className="bg-gray-50 rounded-lg p-6">
             <h4 className="font-semibold text-gray-800 mb-2">Current Location</h4>

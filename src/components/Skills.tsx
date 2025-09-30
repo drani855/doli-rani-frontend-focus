@@ -6,7 +6,6 @@ export const Skills = () => {
     {
       category: "Frontend Technologies",
       skills: [
-        { name: "React JS", level: 90 },
         { name: "Angular", level: 85 },
         { name: "TypeScript", level: 85 },
         { name: "HTML5", level: 95 },
@@ -29,7 +28,12 @@ export const Skills = () => {
         { name: "Git", level: 85 },
         { name: "Eclipse", level: 75 },
         { name: "IntelliJ", level: 80 },
-        { name: "Visual Studio", level: 85 }
+        { name: "Visual Studio", level: 85 },
+        { name: "LangChain", level: 70 },
+        { name: "Hugging Face Transformers", level: 75 },
+        { name: "TensorFlow", level: 75 },
+        { name: "PyTorch", level: 70 },
+        { name: "OpenAI API", level: 80 }
       ]
     },
     {
